@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription à 2Vis</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>2Vis</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+                <li><a href="connexion.html">connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section class="content">
+        <h2>Formulaire d'Inscription</h2>
+        <form id="inscriptionForm" method="post">
+            <div>
+                <label for="user">Vous êtes :</label>
+                <select id="userInput" name="user">
+                    <option value="Client">Particulier</option>
+                    <option value="Professionnel">Professionnel</option>
+                </select>
+            </div>
+            <div id="clientForm">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
+                <div id="emailError" style="display: none; color: red;">Veuillez saisir une adresse e-mail valide.</div>
+                
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" placeholder="********" required>
+                <div id="passwordError" style="display: none; color: red;">Le mot de passe doit contenir au moins une majuscule, une minuscule, un chiffre, un caractère spécial et avoir au moins 8 caractères.</div>
+
+                <label for="confirmation">Confirmer le mot de passe :</label>
+                <input type="password" id="confirmation" name="confirmation" placeholder="********" required>
+            </div>
+                
+            <div id="professionnelleForm" style="display: none;">
+
+                <label for="raison">Raison Sociale :</label>
+                <input type="text" id="raison" name="raison" placeholder="Raison sociale">
+
+                <label for="siret">Numéro de SIRET :</label>
+                <input type="text" id="siret" name="siret" placeholder="XXXXXXXXXXXXXX" maxlength="14" pattern="[0-9]{14}" title="Le numéro de SIRET doit contenir 14 chiffres">
+            </div>
+
+            <input type="checkbox" id="conditions" name="conditions" required>
+            <label for="conditions">J'accepte les conditions d'utilisation</label>
+            
+
+            
+            <button type="submit">S'inscrire</button>
+        </form>
+    </section>
+</main>
+   
+<footer>  
+    &copy; -2024- Mansouri Youcef -2Vis- Tout droit reserver
+    <p>
+       <a href="apropos.html"> A propos de nous - </a>
+       <a href="contact.html"> Nous contacter - </a> 
+       <a href="condition.html">Conditions d'utilisation</a>        
+   </p> 
+   <p>
+       Retrouvez nous sur : 
+       <img src="./asset/FB.jpg" alt="FB" class="logo">
+       <img src="./asset/Insta.jpg" alt="Insta" class="logo">
+       <img src="./asset/tiktok.jpg" alt="tiktok" class="logo">
+       <img src="./asset/linkedin.jpg" alt="linkedin" class="logo">
+       <img src="./asset/twitter.jpg" alt="twitter" class="logo">
+   </p>
+</footer>
+<script type="module" src="/js/inscription.js"></script>
+
+
+
+</body>
+</html>

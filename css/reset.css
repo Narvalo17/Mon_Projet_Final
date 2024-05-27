@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font: 1.6rem 'Open Sans', sans-serif;
+    letter-spacing: .1rem;
+    line-height: 1.6;
+    margin: 0;
+    height: 100vh;
+}
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4{
+    margin: 0;
+}
+ul,ol,p,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+img{
+    display: inline-block;
+    object-fit: cover;
+    vertical-align: middle;
+}
