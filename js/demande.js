@@ -13,13 +13,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const imagePath = image ? image.name : "";
 
-        const data = {
+    const data = {
             typeService: service,
             description: description,
             rue: rue,
             cp: codPostal,
             ville: ville,
-            imagesUrl: [imagePath] 
+            imagesUrl: [imagePath],
+            dateCreation: new Date().toISOString(), 
+            adresseId: Math.floor(Math.random() * 10000), 
+            utilisateurId: JSON.parse(localStorage.getItem('userData')).userApp.id
         };
 
         try {
@@ -43,3 +46,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+

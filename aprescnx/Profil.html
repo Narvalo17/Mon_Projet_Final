@@ -3,28 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notifications Utilisateur</title>
+    <title>Profil</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <h1>Notifications Utilisateur</h1>
-    </header>
-    <head><nav>
-        <ul>
-            <li><a href="accueil.html">Accueil</a></li>
-            <li><a href="#">profil</a></li>
-            <li><a href="demandeService.html">Demander un service</a></li>
-        </ul>
-    </nav></head>
-    
-
-    <section class="content">
-        <h2>Consulter Mes Demandes</h2>
-        <div id="demandes-container">
-        </div>
-    </section>
-    <<!-- script type="module" src="../js/notif.js"></script> -->
-    <script type="module" src="../js/accueil.js"></script>
+        <h1>2Vis</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="demandeService.html">Demander un service</a></li>
+                <li><a href="profil.html">Profil</a></li>
+            </ul>
+            <li class="utilisateur">
+                <span id="nom-utilisateur">Utilisateur non connecté</span>
+            </li>
+        </nav>
+    </header><main> <button id="btn-consulter-profil">Consulter mon profil</button>
+        <div id="profil-popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <div id="profil-details"></div>
+                <div id="demandes-details"></div>
+            </div>
+        </div></main>
+      
+    <footer>
+        &copy; -2024- Mansouri Youcef -2Vis- Tous droits réservés
+        <p>
+            <a href="aide.html">Besoin d'aide?</a>
+            <a href="apropos.html">À propos de nous</a>
+            <a href="contact.html">Nous contacter</a>
+        </p>
+        <p>
+            Retrouvez-nous sur :
+            <img src="../asset/FB.jpg" alt="FB" class="logo">
+            <img src="../asset/Insta.jpg" alt="Insta" class="logo">
+            <img src="../asset/tiktok.jpg" alt="tiktok" class="logo">
+            <img src="../asset/linkedin.jpg" alt="linkedin" class="logo">
+            <img src="../asset/twitter.jpg" alt="twitter" class="logo">
+        </p>
+    </footer>
+    <script type="module" src="../js/profil.js"></script>
 </body>
 </html>
+
