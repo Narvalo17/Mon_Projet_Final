@@ -244,10 +244,10 @@ form button:hover {
 }
 
 .box p{
-    
+    position: relative;
     opacity: 0;
     height: 0;
-
+    z-index: 0;
     color: #333;
     transition-duration: .6s;
    
@@ -257,6 +257,7 @@ form button:hover {
    
     height: 9rem;
     opacity: 1;
+    z-index: 5;
     
 }
 .contact-form textarea {
@@ -298,9 +299,6 @@ footer {
     border-radius: 0.4rem;
 }
 
-
-
-
 @media screen and (max-width: 60rem) {
     body{
         display: block;
@@ -332,6 +330,24 @@ footer {
 
     .contact-form textarea {
         width: 100%;
+     
+        
+        
+        
+    }
+    .box{
+        overflow: hidden;
+    }
+    .box.active p {
+           
+        height: 9rem;
+        width: 29.4rem;
+        opacity: 1;
+        z-index: 5;
+        text-overflow:ellipsis;
+        
+       
+        
     }
 
 }
