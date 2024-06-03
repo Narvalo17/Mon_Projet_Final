@@ -6,17 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const profilDetails = document.getElementById('profil-details');
         profilDetails.innerHTML = `
-                                <p><strong>ID:</strong> ${userData.userApp.id}</p>
-                                <p><strong>Email:</strong> ${userData.userApp.email}</p>
-                                <p><strong>Nom:</strong> ${userData.userApp.nom}</p>
-                                <p><strong>Prénom:</strong> ${userData.userApp.prenom}</p>
-                                <p><strong>Actif:</strong> ${userData.userApp.estActif}</p>
+            <p><strong>Email:</strong> ${userData.userApp.email}</p>
+            <p><strong>Nom:</strong> ${userData.userApp.nom}</p>
+            <p><strong>Prénom:</strong> ${userData.userApp.prenom}</p>
+            <p><strong>Actif:</strong> ${userData.userApp.estActif}</p>
         `;
     } else {
         document.getElementById('nom-utilisateur').textContent = 'Utilisateur non connecté';
     }
-
-    
 
     document.getElementById('logout').addEventListener('click', function() {
         localStorage.removeItem('userData');
@@ -39,5 +36,5 @@ document.addEventListener('DOMContentLoaded', function() {
             popup.style.display = 'none';
         }
     });
-    
 });
+

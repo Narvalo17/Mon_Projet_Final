@@ -173,9 +173,6 @@ form div input{
     text-decoration: none;
     cursor: pointer;
 }
-
-
-
 form button{
     width: 100%;
     padding: 0.1rem;
@@ -330,10 +327,6 @@ footer {
 
     .contact-form textarea {
         width: 100%;
-     
-        
-        
-        
     }
     .box{
         overflow: hidden;
