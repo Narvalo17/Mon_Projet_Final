@@ -53,12 +53,12 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 
     if (!regexEmail.test(email)) {
         console.alert("Erreur: L'adresse e-mail n'est pas valide.");
-        return; // Arrête l'exécution si l'adresse e-mail n'est pas valide
+        return; 
     }
 
     if (!regexPassword.test(password)) {
         console.alert("Erreur: Le mot de passe n'est pas conforme.");
-        return; // Arrête l'exécution si le mot de passe n'est pas conforme
+        return; 
     }
 
     let formData = {

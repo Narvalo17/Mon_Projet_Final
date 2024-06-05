@@ -91,17 +91,17 @@ document.getElementById('inscriptionForm').addEventListener('submit', async func
 
     if (password !== confirmation) {
         console.log("Erreur: Le mot de passe et sa confirmation ne correspondent pas.");
-        return; // Arrête l'exécution si le mot de passe et sa confirmation ne correspondent pas
+        return; 
     }
 
     if (!regexEmail.test(email)) {
         console.log("Erreur: L'adresse e-mail n'est pas valide.");
-        return; // Arrête l'exécution si l'adresse e-mail n'est pas valide
+        return; 
     }
 
     if (!regexPassword.test(password)) {
         console.log("Erreur: Le mot de passe n'est pas conforme.");
-        return; // Arrête l'exécution si le mot de passe n'est pas conforme
+        return; 
     }
 
     let formData = {
