@@ -1,7 +1,7 @@
     import { BASE_URL, PORT, PRO_ENDPOINT, USER_ENDPOINT } from "./constantes.js";
 
 const regexEmail = /^[a-zA-Z0-9._%+-]+@(gmail|yahoo|outlook|hotmail)\.(com|fr|net)$/;
-const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[-+*/=])[A-Za-z\d\-+*/=]{8,}$/;
+const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[-+*/=])[A-Za-z\d\-+*/=]{12,}$/;
 
 
 document.getElementById('userInput').addEventListener('change', function() {
@@ -28,7 +28,7 @@ document.getElementById('inscriptionForm').addEventListener('submit', async func
     } else {
         raison = document.getElementById('raison').value;
         siret = document.getElementById('siret').value;
-        nom = prenom = email = password = confirmation = null; // Reset des valeurs pour le cas où
+        nom = prenom = email = password = confirmation = null; 
     }
 
     if (password !== confirmation) {

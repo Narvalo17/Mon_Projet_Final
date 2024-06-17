@@ -1,7 +1,7 @@
       import { BASE_URL, PORT, LOGIN, USER_ENDPOINT } from "./constantes.js";
 
       const regexEmail = /^[a-zA-Z0-9._%+-]+@(gmail|yahoo|outlook|hotmail)\.(com|fr|net)$/;
-      const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[-+*/=])[A-Za-z\d\-+*/=]{8,}$/;
+      const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[-+*/=])[A-Za-z\d\-+*/=]{12,}$/;
       
       document.getElementById('loginForm').addEventListener('submit', async function(event) {
           event.preventDefault(); 
