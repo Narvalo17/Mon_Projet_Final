@@ -2,7 +2,7 @@
 
 const regexEmail = /^[a-zA-Z0-9._%+-]+@(gmail|yahoo|outlook|hotmail)\.(com|fr|net)$/;
 const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[-+*/=])[A-Za-z\d\-+*/=]{12,}$/;
-
+ 
 
 document.getElementById('userInput').addEventListener('change', function() {
     let user = this.value;
@@ -32,17 +32,17 @@ document.getElementById('inscriptionForm').addEventListener('submit', async func
     }
 
     if (password !== confirmation) {
-        console.log("Erreur: Le mot de passe et sa confirmation ne correspondent pas.");
+         alert("Erreur: Le mot de passe et sa confirmation ne correspondent pas.");
         return; 
     }
 
     if (!regexEmail.test(email)) {
-        console.log("Erreur: L'adresse e-mail n'est pas valide.");
+        alert("Erreur: L'adresse e-mail n'est pas valide.");
         return; 
     }
 
     if (!regexPassword.test(password)) {
-        console.log("Erreur: Le mot de passe n'est pas conforme.");
+        alert("Erreur: Le mot de passe n'est pas conforme.Il doit contenir 12 caractére dont une majuscule une minuscule un caractere spéciale et un chiffre");
         return; 
     }
 
@@ -66,4 +66,5 @@ document.getElementById('inscriptionForm').addEventListener('submit', async func
     } catch (error) {
         console.error('Erreur lors de la requête :', error);
     }
+    window.location.href = '../connexion.html';
 });

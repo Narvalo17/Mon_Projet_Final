@@ -15,7 +15,7 @@
           }
       
           if (!regexPassword.test(password)) {
-              alert("Erreur: Le mot de passe n'est pas conforme.");
+              alert("Erreur: Le mot de passe n'est pas conforme.Il doit contenir 12 caractére dont une majuscule une minuscule un caractere spéciale et un chiffre");
               return; 
           }
       
